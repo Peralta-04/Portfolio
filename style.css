@@ -198,3 +198,43 @@ footer a{
 footer a:hover{
   text-decoration: underline;
 }
+
+/* PROJECTS */
+.projects {
+  background: var(--muted-bg);
+  padding: 120px var(--content-pad-x);
+}
+
+.projects-list {
+  max-width: 930px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.proj h3 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.proj p {
+  font-size: 14px;
+  line-height: 23px;
+}
+
+.tag-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.tag-row span {
+  font-size: 14px;
+}
+
+/* Responsive for smaller screens */
+@media(max-width:720px){
+  .proj h3 { font-size:20px; }
+  .proj p { font-size:13.5px; }
+}
